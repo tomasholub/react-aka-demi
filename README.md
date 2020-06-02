@@ -1,6 +1,6 @@
 # React Academy
 
-Courses:
+Courses (each course wil last 1-2 hours (probably 2))
 
 ### 1. Modern Javascript
 - let, const
