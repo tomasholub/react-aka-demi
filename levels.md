@@ -26,7 +26,7 @@
 <table style="background: yellow">
   <tr style="background: yellow">
     <td style="background: yellow">a1</td>
-    <td>a2</td>
+    <td>a2 <div style="background: red">a3</div></td>
   </tr>
   <tr>
     <td>b1</td>
