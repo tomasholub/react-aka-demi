@@ -23,7 +23,7 @@
   </tr>
 </table>
 
-<table style="background: yellow">
+<table style="color: yellow">
   <tr style="background: yellow">
     <td style="background: yellow">a1</td>
     <td>a2 <div style="background: red">a3</div></td>
