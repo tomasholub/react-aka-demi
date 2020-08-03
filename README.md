@@ -6,6 +6,7 @@ Courses (each course wil last 1-2 hours (probably 2))
 - let, const
 - arrow functions
 - { field: field } abbreviated to { field }
+- default parameter values
 - spread
 - destructure, default values
 - ternary operator, conditional rendering
