@@ -5,6 +5,7 @@ Courses (each course wil last 1-2 hours (probably 2))
 ### 1. Modern Javascript
 - let, const
 - arrow functions
+- { field: field } abbreviated to { field }
 - spread
 - destructure, default values
 - ternary operator, conditional rendering
