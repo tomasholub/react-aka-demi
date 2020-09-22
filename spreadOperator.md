@@ -137,9 +137,9 @@ You can even use spread operator to remove some fields from the original object:
 
 ```
 const name = {
-	first: "Arthur",
-	middle: "Conan",
-	last: "Doyle",
+  first: "Arthur",
+  middle: "Conan",
+  last: "Doyle",
 };
 
 const { middle, ...nameWithoutMiddle } = name;
@@ -159,8 +159,8 @@ Example:
 
 ```
 const orig = {
-	num: 123,
-	arr: [7, 8],
+  num: 123,
+  arr: [7, 8],
 };
 
 const clone = { ...orig };
@@ -178,8 +178,8 @@ If you want to deep-copy this object, you can do it e.g. like this:
 
 ```
 const orig = {
-	num: 123,
-	arr: [7, 8],
+  num: 123,
+  arr: [7, 8],
 };
 
 const clone = { ...orig, arr: [...orig.arr] };
