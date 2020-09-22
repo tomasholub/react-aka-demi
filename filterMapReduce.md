@@ -2,7 +2,7 @@
 
 You can use `filter`, `map` and `reduce` methods to manipulate Array items in a functional way.
 
-![mapFilterReduce](images//mapFilterReduce.png)
+![mapFilterReduce](mapFilterReduce.png)
 
 
 ## Filter
