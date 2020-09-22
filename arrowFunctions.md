@@ -50,6 +50,8 @@ Without brackets:
 const power = num => num * num;
 ```
 
+Both ways are correct and the functionality is the same.
+
 Use http://prettier.io to maintain consistent behavior.
 
 ## Advanced: Ternary operator can help to make a function syntax simpler
