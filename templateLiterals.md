@@ -13,7 +13,7 @@ console.log('You can use apostrofe too');
 Using template literals:
 
 ```
-console.log(`This is the new way.`);
+console.log(`This is the new way.`); // using backticks
 ```
 
 ## Multiline strings
