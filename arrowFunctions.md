@@ -24,7 +24,7 @@ Best practices:
 - Use arrow functions when creating functions in classes and React components.
 
 
-## Simple functions don't need block { }
+## One-line arrow functions don't need block { }
 
 Complicated syntax:
 ```
