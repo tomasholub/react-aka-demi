@@ -115,7 +115,7 @@ console.log(newObj.name); // prints: James Bond
 
 It is executed from left to right.
 
-This doesn't do anything:
+This doesn't change anything after all:
 
 ```
 const orig = {
