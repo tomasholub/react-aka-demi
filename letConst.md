@@ -11,7 +11,7 @@ console.log(count);
 count = 7; // the same variable
 console.log(count);
 
-count = "Pareto Principle";
+count = "Pareto Principle"; // the same variable
 console.log(count);
 ```
 
