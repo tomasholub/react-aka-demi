@@ -193,6 +193,6 @@ console.log(clone); // { num: 123, arr: [ 7, 8 ]}
 
 This way, first the whole `orig` object is cloned and then the `arr` item is cloned independently. Note the number `7` in the output of the last console.log.
 
-The disadvantage of this approach is that you need to know structure and types of the object.
+The disadvantage of this approach is that you need to know (or detect) structure and types inside the object.
 
 Another possible solution is to use an external library, e.g. lodash method `cloneDeep` :-)
