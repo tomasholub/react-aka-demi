@@ -67,7 +67,7 @@ function divideOld(a, b) {
 }
 ```
 
-New, simpler syntax:
+New, simpler syntax (with ternary operator):
 ```
 const divideNew = (a, b) => b !== 0 ? a / b : NaN;
 ```
