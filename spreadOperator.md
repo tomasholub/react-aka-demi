@@ -184,6 +184,9 @@ const orig = {
 
 const clone = { ...orig, arr: [...orig.arr] };
 
+orig.num = 444;
+orig.arr[0] = 99;
+
 console.log(orig); // { num: 444, arr: [ 99, 8 ] }
 console.log(clone); // { num: 123, arr: [ 7, 8 ]}
 ```
