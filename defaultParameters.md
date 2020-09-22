@@ -44,6 +44,3 @@ someDefault(3);       // prints: 3, 1, undefined
 someDefault(4, 5);    // prints: 4, 5, undefined
 someDefault(7, 8, 9); // prints: 7, 8, 9
 ```
-
-## Advanced: IE doesn't support default parameters
-- TODO: check
