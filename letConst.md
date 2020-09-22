@@ -34,11 +34,11 @@ This is not probably surprising, variable can store a reference to a function:
 
 ```
 function myFunc1() {
-	console.log("From myFunc1");
+  console.log("From myFunc1");
 }
 
 function myFunc2() {
-	console.log("From myFunc2");
+  console.log("From myFunc2");
 }
 
 myFunc1();  // prints: From myFunc1
