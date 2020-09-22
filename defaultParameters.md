@@ -44,3 +44,5 @@ someDefault(3);       // prints: 3, 1, undefined
 someDefault(4, 5);    // prints: 4, 5, undefined
 someDefault(7, 8, 9); // prints: 7, 8, 9
 ```
+
+There is no way to specify only x and z during the function call.
