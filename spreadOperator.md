@@ -41,9 +41,9 @@ result = sum(...numbers);
 ### 2. To define array:
 
 ```
-cconst numbers = [1, 2, 3];
+const numbers = [1, 2, 3];
 
-onst arr = [...numbers];
+const arr = [...numbers];
 ```
 
 Equivalent to:
