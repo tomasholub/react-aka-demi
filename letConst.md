@@ -8,7 +8,7 @@ Any type can be assigned to a variable:
 let count = 0;
 console.log(count);
 
-count = 7;
+count = 7; // the same variable
 console.log(count);
 
 count = "Pareto Principle";
