@@ -4,14 +4,12 @@ Courses (each course wil last 1-2 hours (probably 2))
 
 ### 1. Modern Javascript
 - [Let, const](letConst.md)
-- arrow functions
-- { field: field } abbreviated to { field }
-- default parameter values
-- spread
-- destructure, default values
-- ternary operator, conditional rendering
-- filter, map, reduce
-- npm
+- [Template literals](templateLiterals.md)
+- [Arrow functions](arrowFunctions.md)
+- [Default parameter values](defaultParameters.md)
+- [Spread operator](spreadOperator.md)
+- [Destructuring](destructuringAssignment.md)
+- [Filter, map, reduce](filterMapReduce.md)
 
 ### 2. Basic React
 - create-react-app, hot-reload
