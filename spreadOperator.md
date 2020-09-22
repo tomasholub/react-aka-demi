@@ -133,7 +133,7 @@ console.log(copy);  // prints: { character: "Dilbert" }
 
 ## Advanced: You can remove fields
 
-You can even use spread operator to remove some fields from the original object:
+You can even use spread operator to remove some fields from the original object (used together with destructuring):
 
 ```
 const name = {
