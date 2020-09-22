@@ -8,9 +8,9 @@ Consider this object for the following examples:
 
 ```
 const person = {
-	first: "Forrest",
-	middle: "Alexander",
-	last: "Gump",
+  first: "Forrest",
+  middle: "Alexander",
+  last: "Gump",
 };
 ```
 
@@ -49,29 +49,29 @@ It is possible to unpack a value from a deeper level in an object:
 
 ```
 const movie = {
-	name: "Forrest Gump",
-	year: 1994,
-	producer: {
-		name: {
-			first: "Robert",
-			middle: "Lee",
-			last: "Zemeckis",
-		},
-	},
-	mainCharacter: {
-		name: {
-			first: "Forrest",
-			middle: "Alexander",
-			last: "Gump",
-		},
-	},
+  name: "Forrest Gump",
+  year: 1994,
+  producer: {
+    name: {
+      first: "Robert",
+      middle: "Lee",
+      last: "Zemeckis",
+    },
+  },
+  mainCharacter: {
+    name: {
+      first: "Forrest",
+      middle: "Alexander",
+      last: "Gump",
+    },
+  },
 };
 
 const {
-	name,
-	producer: {
-		name: { first, last },
-	},
+  name,
+  producer: {
+    name: { first, last },
+  },
 } = movie; // 2 variables "first" and "last" are defined and initialized
 
 console.log(`Movie: ${name}
@@ -88,32 +88,32 @@ Fortunately, we can rename variables:
 
 ```
 const movie = {
-	name: "Forrest Gump",
-	year: 1994,
-	director: {
-		name: {
-			first: "Robert",
-			middle: "Lee",
-			last: "Zemeckis",
-		},
-	},
-	mainCharacter: {
-		name: {
-			first: "Forrest",
-			middle: "Alexander",
-			last: "Gump",
-		},
-	},
+  name: "Forrest Gump",
+  year: 1994,
+  director: {
+    name: {
+      first: "Robert",
+      middle: "Lee",
+      last: "Zemeckis",
+    },
+  },
+  mainCharacter: {
+    name: {
+      first: "Forrest",
+      middle: "Alexander",
+      last: "Gump",
+    },
+  },
 };
 
 const {
-	name,
-	director: {
-		name: { first: directorFirst, last: directorLast },
-	},
-	mainCharacter: {
-		name: { first: mainCharacterFirst, last: mainCharacterLast },
-	},
+  name,
+  director: {
+    name: { first: directorFirst, last: directorLast },
+  },
+  mainCharacter: {
+    name: { first: mainCharacterFirst, last: mainCharacterLast },
+  },
 } = movie;
 
 console.log(`Movie: ${name}
@@ -140,19 +140,19 @@ However, if we try to destructure an item from a deeper level of the object, the
 
 ```
 const products = {
-	electronics: {
-		computer: "Commodore Amiga",
-	},
+  electronics: {
+    computer: "Commodore Amiga",
+  },
 };
 
 const {
-	electronics: { computer },
+  electronics: { computer },
 } = products;
 
 console.log(computer); // prints: Commodore Amiga
 
 const {
-	sport: { shoes },
+  sport: { shoes },
 } = products;
 
 console.log(shoes); // prints: Type Error: Cannot read property 'shoes' of undefined
@@ -165,8 +165,8 @@ It is possible to assign a default value to a new variable. It is assigned inste
 
 ```
 const zoo = {
-	sector1: "elephant",
-	sector2: "giraffe",
+  sector1: "elephant",
+  sector2: "giraffe",
 };
 
 const { sector1 = "not found", sector7 = "not found" } = zoo;
