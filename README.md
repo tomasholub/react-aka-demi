@@ -3,10 +3,10 @@
 Courses (each course wil last 1-2 hours (probably 2))
 
 ### 1. Modern Javascript
-- [Let, const](letConst.md)
+- [Variable declaration](letConst.md)
 - [Template literals](templateLiterals.md)
 - [Arrow functions](arrowFunctions.md)
-- [Default parameter values](defaultParameters.md)
+- [Default parameters](defaultParameters.md)
 - [Spread operator](spreadOperator.md)
 - [Destructuring](destructuringAssignment.md)
 - [Filter, map, reduce](filterMapReduce.md)
