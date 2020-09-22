@@ -147,6 +147,6 @@ const dan = new MyClass("Dan");
 dan.getName();
 
 const getNameDan = dan.getName;
-getNameDan(); // if bind is not present: TypeError: Cannot read property 'name' of undefined
+getNameDan(); // it just works
 
 ```
