@@ -7,8 +7,8 @@ Courses (each course wil last 1-2 hours (probably 2))
 - [Template literals](templateLiterals.md)
 - [Arrow functions](arrowFunctions.md)
 - [Default parameters](defaultParameters.md)
-- [Spread operator](spreadOperator.md)
 - [Destructuring](destructuringAssignment.md)
+- [Spread operator](spreadOperator.md)
 - [Filter, map, reduce](filterMapReduce.md)
 
 ### 2. Basic React
