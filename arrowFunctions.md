@@ -123,8 +123,8 @@ jakub.getName();
 const dan = new MyClass("Dan");
 dan.getName();
 
-const getNameDan = dan.getName; // if bind is not present: TypeError: Cannot read property 'name' of undefined
-getNameDan();
+const getNameDan = dan.getName;
+getNameDan();  // if bind is not present: TypeError: Cannot read property 'name' of undefined
 ```
 
 Arrow functions do the binding implicitly:
