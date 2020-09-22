@@ -68,7 +68,6 @@ const movie = {
 };
 
 const {
-  name,
   producer: {
     name: { first, last },
   },
