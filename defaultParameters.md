@@ -2,7 +2,7 @@
 
 ## Default values
 
-Old way of checking parameters:
+Old way of checking parameters and setting a default value:
 
 ```
 const printFrequency = (value, unit) => {
