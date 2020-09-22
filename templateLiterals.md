@@ -34,7 +34,7 @@ And this is the second line.
 And third`;
 ```
 
-Note that we don't need to use `\\n`.
+Note that we don't need to use `\n`.
 
 Also note that each space or tab character or is important, i.e. there is no space in front of the second and third line. As a result, indentation seems incorrect.
 
