@@ -5,16 +5,16 @@
 Old way to define a function:
 ```
 function func1(param1, param2) {
-	console.log("From func 1", param1, param2);
-    return 1;
+  console.log("From func 1", param1, param2);
+  return 1;
 }
 ```
 
 New way to define a function:
 ```
 const func2 = (param1, param2) => {
-	console.log("From func 2", param1, param2);
-    return 2;
+  console.log("From func 2", param1, param2);
+  return 2;
 };
 ```
 
@@ -29,7 +29,7 @@ Best practices:
 Complicated syntax:
 ```
 const plus = (a, b) => {
-	return a + b;
+  return a + b;
 }
 ```
 
@@ -57,11 +57,11 @@ Use http://prettier.io to maintain consistent behavior.
 Older, more complicated syntax:
 ```
 function divideOld(a, b) {
-	if (b !== 0) {
-		return a / b;
-	} else {
-		return NaN;
-	}
+  if (b !== 0) {
+    return a / b;
+  } else {
+    return NaN;
+  }
 }
 ```
 
@@ -105,14 +105,14 @@ console.log(helloFunc("Jiri")); // prints: Hello Jiri
 Non-arrow function must be `bind` explicitly:
 ```
 class MyClass {
-	constructor(name) {
-		this.name = name;
-		this.getName = this.getName.bind(this); // try comment this line
-	}
+  constructor(name) {
+    this.name = name;
+    this.getName = this.getName.bind(this); // try comment this line
+  }
 
-	getName() {
-		console.log("Name is", this.name);
-	}
+  getName() {
+    console.log("Name is", this.name);
+  }
 }
 
 const jakub = new MyClass("Jakub");
@@ -128,14 +128,14 @@ getNameDan();
 Arrow functions do the binding implicitly:
 ```
 class MyClass {
-	constructor(name) {
-		this.name = name;
-        // no explicit binding here
-	}
+  constructor(name) {
+    this.name = name;
+    // no explicit binding here
+  }
 
-	getName = () => {
-		console.log("Name is", this.name);
-	};
+  getName = () => {
+    console.log("Name is", this.name);
+  };
 }
 
 const jakub = new MyClass("Jakub");
