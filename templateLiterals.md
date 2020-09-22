@@ -21,8 +21,8 @@ console.log(`This is the new way.`);
 Old way how to define string with several lines:
 
 ```
-const a = "This is the first line\\n" +
-  "And this is the second line.\\n" +
+const a = "This is the first line\n" +
+  "And this is the second line.\n" +
   "And third";
 ```
 
