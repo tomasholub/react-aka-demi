@@ -6,7 +6,7 @@ Old way of checking parameters and setting a default value:
 
 ```
 const printFrequency = (value, unit) => {
-  if (typeof scale === "undefined") {
+  if (typeof unit === "undefined") {
     unit = "Hz";
   }
 
