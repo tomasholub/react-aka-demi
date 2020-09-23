@@ -85,7 +85,7 @@ Map function transforms all the items in the array and returns a **new** array, 
 
 This means we need to provide a function that changes **one** item.
 
-Example: Get titles of food products together with their calories:
+Example: Get titles of food products together with their calories (1 string for each item):
 
 ```
 const products = [
