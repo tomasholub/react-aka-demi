@@ -15,30 +15,30 @@ E.g. we want to filter food products that are vegetarian. Old way:
 
 ```
 const products = [
-	{
-		title: "Tomato",
-		vegetarian: true,
-		calories: 18,
-	},
-	{
-		title: "Beef",
-		vegetarian: false,
-		calories: 177,
-	},
-	{
-		title: "Coca-Cola",
-		vegetarian: true,
-		calories: 140,
-	},
+  {
+    title: "Tomato",
+    vegetarian: true,
+    calories: 18,
+  },
+  {
+    title: "Beef",
+    vegetarian: false,
+    calories: 177,
+  },
+  {
+    title: "Coca-Cola",
+    vegetarian: true,
+    calories: 140,
+  },
 ];
 
 const veg = [];
 
 // we can do all the filtering by ourselves
 for (let i = 0; i < products.length; i++) {
-	if (products[i].vegetarian) {
-		veg.push(products[i]);
-	}
+  if (products[i].vegetarian) {
+    veg.push(products[i]);
+  }
 }
 
 console.log(veg);
@@ -58,7 +58,7 @@ New way using `filter` function:
 ```
 // This function contains condition for the filtering
 function isVegetarian(prod) {
-	return prod.vegetarian === true;
+  return prod.vegetarian === true;
 }
 
 const filtered = products.filter(isVegetarian); // yes, it is here
@@ -74,9 +74,9 @@ const filtered2 = products.filter((prod) => prod.vegetarian === true);
 console.log(filtered2); // the result is the same as in the previous example
 ```
 
-The old way is **descriptive**, i.e. you need to describe **HOW** you should do it, while the new way is *declarative*, i.e. you describe *WHAT* you want to do it.
+The old way is **descriptive**, i.e. you need to describe **HOW** you should do it, while the new way is *declarative*, i.e. you describe *WHAT* you want to do.
 
-The new way is more clear once you get used to it.
+The new way is clearer once you get used to it.
 
 
 ## Map
