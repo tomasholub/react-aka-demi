@@ -81,9 +81,9 @@ The new way is clearer once you get used to it.
 
 ## Map
 
-Map function transforms all items in the array and returns a **new** array, i.e. maps them to something else.
+Map function transforms all the items in the array and returns a **new** array, i.e. maps them to something else.
 
-This means that function that changes **one** item must be provided.
+This means we need to provide a function that changes **one** item.
 
 Example: Get titles of food products together with their calories:
 
