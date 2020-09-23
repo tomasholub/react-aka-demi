@@ -170,7 +170,7 @@ In this case, it would be easier and smarter to compute the array length beforeh
 
 ## Reduce
 
-The previous functions `filter` and `map` transformed array to another array. `Reduce` functionality transforms an array into a single variable.
+The previous functions `filter` and `map` transformed array to another array. `Reduce` functionality transforms an array into a **single variable**.
 
 There is a so-called `accumulator` variable. This variable is initialized with a default value and then updated for each item in the array. In other words, you can specify a function that takes an array item and somehow updates the accumulator variable.
 
@@ -178,13 +178,13 @@ Lets see an example. We have a list of employees together with their monthly sal
 
 ```
 const employees = [
-	{ name: "James Bond", salary: 10000 },
-	{ name: "Forrest Gump", salary: 13000 },
-	{ name: "Winnie the Pooh", salary: 4000 },
+  { name: "James Bond", salary: 10000 },
+  { name: "Forrest Gump", salary: 13000 },
+  { name: "Winnie the Pooh", salary: 4000 },
 ];
 
 function addSalary(acc, curr) {
-	return acc + curr.salary;
+  return acc + curr.salary;
 }
 
 const total = employees.reduce(addSalary, 0);
@@ -194,7 +194,7 @@ console.log("Total amount", total);
 
 The function `addSalary` is executed for each array item. It receives 2 parameters: **acc** = accumulator and **curr** = current array item.
 
-- accumulator is used to add (pile) monthly salaries from each array item. In our case we assign to **acc** the previous value of **acc** plus salary from the **current** array item.
+- accumulator is used to store sum of all monthly salaries from the employees.
 - current item can be used for our computation, i.e. we use it to get the salary of the current employee.
 
 As previously, lets rewrite the example using inline arrow function:
@@ -210,8 +210,8 @@ We can use reducer to iterate over the array and find e.g. the maximum salary.
 
 ```
 const maxSalary = employees.reduce(
-	(acc, curr) => (curr.salary > acc ? curr.salary : acc),
-	0
+  (acc, curr) => (curr.salary > acc ? curr.salary : acc),
+  0
 );
 
 console.log("Max salary", maxSalary);
@@ -224,15 +224,24 @@ As you can see, we use **acc** to hold the maximum salary. If the current salary
 
 It is easy to "chain" `filter`, `map` and `reduce`. Then, you can appreciate this declarative style of programming, because you can easily see the purpose of single steps.
 
-Lets improve our example with employees and add a flag `human`. Lets write a code that returns the biggest salary of a human being.
+Lets improve our example with employees and add a flag `human`. Lets write a code that returns the biggest salary of a human being together with the name of the human:
 
 ```
+const employees = [
+  { name: "James Bond", salary: 10000, human: true },
+  { name: "Forrest Gump", salary: 13000, human: true },
+  { name: "Winnie the Pooh", salary: 4000, human: false },
+];
+
 const humanMax = employees
-	.filter((e) => e.human)
-	.reduce((acc, curr) => (curr.salary > acc.salary ? curr : acc), {
-		name: "",
-		salary: 0,
-	});
+  .filter((e) => e.human)
+  .reduce((acc, curr) => (
+    curr.salary > acc.salary ? curr : acc),
+    {
+      name: "",
+      salary: 0,
+    }
+  );
 
 console.log(`${humanMax.name}: ${humanMax.salary}`);
 ```
