@@ -89,26 +89,26 @@ Example: Get titles of food products together with their calories:
 
 ```
 const products = [
-	{
-		title: "Tomato",
-		vegetarian: true,
-		calories: 18,
-	},
-	{
-		title: "Beef",
-		vegetarian: false,
-		calories: 177,
-	},
-	{
-		title: "Coca-Cola",
-		vegetarian: true,
-		calories: 140,
-	},
+  {
+    title: "Tomato",
+    vegetarian: true,
+    calories: 18,
+  },
+  {
+    title: "Beef",
+    vegetarian: false,
+    calories: 177,
+  },
+  {
+    title: "Coca-Cola",
+    vegetarian: true,
+    calories: 140,
+  },
 ];
 
 // Transforms product to short text representation
 function getTitleCalories(prod) {
-	return `${prod.title}: ${prod.calories}`;
+  return `${prod.title}: ${prod.calories}`;
 }
 
 const onlyTitles = products.map(getTitleCalories);
