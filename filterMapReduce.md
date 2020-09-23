@@ -85,7 +85,7 @@ Map function transforms all the items in the array and returns a **new** array, 
 
 This means we need to provide a function that changes **one** item.
 
-Example: Get titles of food products together with their calories (1 string for each item):
+Example: Get titles of food products together with their calories (1 text string for each product):
 
 ```
 const products = [
@@ -125,13 +125,13 @@ const onlyTitles = products.map((f) => `${f.title}: ${f.calories}`);
 
 ## Advanced: Other arguments
 
-When we specified function that worked over one item of array, we utilized only 1 argument = the item itself. There are other arguments we can use. They are available in `filter`, `map` and `reduce`.
+When we specified a function that worked with one item of an array, we utilized only 1 argument = the item itself. There are other arguments we can use. Btw., they are available in all functions we present here, i.e. in `filter`, `map`, and `reduce`.
 
 ### Index
 
-The second argument is the **index** of the item in the array. (For `reduce`, **index** is the third argument after **accumulator** and **current** arguments.)
+The second argument is **index** of the item in the array. (For `reduce`, **index** is the third argument after **accumulator** and **current** arguments.)
 
-We can e.g. print title of the product together with its order, e.g.:
+If we want e.g. to print title of the product together with its order like this:
 
 ```
 1. Tomato
@@ -141,17 +141,17 @@ We can e.g. print title of the product together with its order, e.g.:
 
 It can be easily done this way:
 ```
-const lines = products.map((prod, i) => `${i}. ${prod.title}`);
+const lines = products.map((prod, i) => `${i + 1}. ${prod.title}`);
 ```
 
-The result is again array and we can e.g. print it.
+The result is again an array and we can e.g. print it.
 
 ### The whole array
 
-The third argument is the **whole array**. It is useful when we need to e.g. compare
+The third argument is the **whole array**. It is useful when we need e.g. to compare
 the current item against the whole array, compute average or median values etc.
 
-Suppose we want to print not only order of the product but also total count of all products:
+Suppose we want to print not only an order of the product but also a total count of all products:
 
 ```
 1/3 Tomato
@@ -161,10 +161,10 @@ Suppose we want to print not only order of the product but also total count of a
 
 It can be done this way:
 ```
-const lines = products.map((prod, i, arr) => `${i}/${arr.length} ${prod.title}`);
+const lines = products.map((prod, i, arr) => `${i + 1}/${arr.length} ${prod.title}`);
 ```
 
-In this case, it would be easier and smarter to compute the array length beforehand. But we wanted to use some pretty easy and simple example.
+In this case, it would be easier and smarter to compute the array length beforehand. But we wanted to show you an easy and simple example.
 
 
 
