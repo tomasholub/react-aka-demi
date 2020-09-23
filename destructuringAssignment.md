@@ -73,8 +73,7 @@ const {
   },
 } = movie; // 2 variables "first" and "last" are defined and initialized
 
-console.log(`Movie: ${name}
-Producer: ${first} ${last}`);
+console.log(`Producer: ${first} ${last}`); // prints: Producer Robert Zemeckis
 ```
 
 
